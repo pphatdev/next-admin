@@ -5,8 +5,8 @@ export default defineConfig({
     dts: false,
     entry: ["./src/cli/index.ts"],
     format: ["esm"],
-    sourcemap: false,
-    minify: false,
+    sourcemap: process.env.NODE_ENV == "production",
+    minify: process.env.NODE_ENV == "production",
     target: "esnext",
     outDir: "./bin/cli"
 })
