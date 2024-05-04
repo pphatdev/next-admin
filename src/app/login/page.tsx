@@ -15,7 +15,7 @@ import LoginButton from "@/components/elements/login-button";
 import { useState } from "react";
 
 export default function Login() {
-    const [email, setEmail] = useState('test@pphat.me')
+    const [email, setEmail] = useState('demo@admin.dev')
     const [password, setPassword] = useState('123')
     return(
         <StarBoard>
@@ -29,14 +29,14 @@ export default function Login() {
                         <div>
                             <a href='/'>
                                 <div className="relative justify-center flex items-center text-4xl font-bold dark:text-gray-800 text-white dark:opacity-80 transition-colors">
-                                    <span className="mr-3 rounded-full bg-current p-2.5 flex items-center justify-center text-[0.7em] leading-none">
-                                        <span className="dark:text-white mb-0.5 text-black">LS</span>
+                                    <h1 className="text-slate-50 uppercase mb-1 text-4xl whitespace-nowrap font-bold">NEXT <span className="font-normal">Admin</span></h1>
+                                    <span className="ml-3 rounded-full bg-current p-2.5 flex items-center justify-center text-[0.7em] leading-none">
+                                        <span className="dark:text-white mb-0.5 h-3 text-sm items-center flex justify-between text-black">NA</span>
                                     </span>
-                                    <h1 className="text-slate-50 uppercase mb-1 text-4xl whitespace-nowrap font-bold">Leat <span className="font-normal">Sophat</span></h1>
                                 </div>
                             </a>
                         </div>
-                        <CardDescription className="text-center mt-10">Welcome to leatsophat.me</CardDescription>
+                        <CardDescription className="text-center mt-10">Welcome to next-admin-tempate</CardDescription>
                     </CardHeader>
                     <CardContent>
                         <form>
@@ -54,7 +54,7 @@ export default function Login() {
                     </CardContent>
                     <CardFooter className="flex gap-2 justify-end mt-3">
                         <Link href="/" className="transition-all bg-transparent hover:bg-white/5 text-white ring-1 ring-inset ring-primary/10 py-2 px-5 inline-flex items-center justify-center focus:outline-none whitespace-nowrap rounded-md text-sm font-medium">Back</Link>
-                        <LoginButton goto={'/admin/contributors'}/>
+                        <LoginButton goto={'/admin'}/>
                     </CardFooter>
                 </Card>
                 </div>
