@@ -6,13 +6,19 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cli:watch": "tsup --watch",
+    "cli:build": "tsup && npm link"
+  },
+  "bin": {
+    "cli": "bin/cli/index.mjs"
   },
   "dependencies": {
     "axios": "^1.6.8",
     "next": "14.2.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "tsup": "^8.0.2"
   },
   "devDependencies": {
     "@types/node": "^20",
