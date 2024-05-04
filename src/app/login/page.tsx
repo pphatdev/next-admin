@@ -13,6 +13,8 @@ import { StarBoard } from '@/templates/stars';
 import Link from "next/link"
 import LoginButton from "@/components/elements/login-button";
 import { useState } from "react";
+import '../../styles/login.css'
+
 
 export default function Login() {
     const [email, setEmail] = useState('demo@admin.dev')
