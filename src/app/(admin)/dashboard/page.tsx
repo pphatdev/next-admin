@@ -3,6 +3,7 @@ import { CalendarDateRangePicker } from "@/components/elements/date-range-picker
 import AdminLayout from "@/components/layouts/admin";
 import AdminBreadcrumb from "@/components/layouts/admin-breadcrumb";
 import { Metadata } from "next";
+import { StatsTab } from "./utils/stats-tab";
 
 export const metadata: Metadata = {
     title: "Dashboard",
@@ -24,6 +25,10 @@ export default function Dashboard() {
                     <Button>Download</Button>
                 </div>
             </header>
+
+            <div>
+                <StatsTab></StatsTab>
+            </div>
 
         </AdminLayout>
     );

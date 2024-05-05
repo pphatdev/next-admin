@@ -33,8 +33,8 @@ const AdminSidebarList: React.FC<{
                                                 href={item.href}
                                                 className={classNames(
                                                     item.current
-                                                        ? "bg-gray-50 text-primary-600 dark:bg-primary/10"
-                                                        : "text-gray-700 hover:text-primary-600 hover:bg-gray-50 dark:hover:bg-primary/10 dark:text-slate-300",
+                                                        ? "bg-gray-50 text-primary dark:bg-primary/10"
+                                                        : "text-gray-700 hover:text-primary hover:bg-gray-50",
                                                     "group flex items-center relative gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold"
                                                 )}
                                             >
@@ -42,8 +42,8 @@ const AdminSidebarList: React.FC<{
                                                     <item.icon
                                                         className={classNames(
                                                             item.current
-                                                                ? "text-primary-600"
-                                                                : "text-gray-400 group-hover:text-primary-600 dark:text-primary",
+                                                                ? "text-primary"
+                                                                : "text-gray-400 group-hover:text-primary dark:text-primary",
                                                             "h-6 w-6 shrink-0"
                                                         )}
                                                         aria-hidden="true"
@@ -52,8 +52,8 @@ const AdminSidebarList: React.FC<{
                                                     <span
                                                         className={classNames(
                                                             item.current
-                                                                ? "text-primary-600 border-primary-600 bg-primary-50 dark:bg-primary/20"
-                                                                : "text-gray-400 dark:bg-primary/10 border-gray-200 dark:border-primary/20 group-hover:border-primary-600 group-hover:text-primary-600",
+                                                                ? "text-primary border-primary bg-primary-50 dark:bg-primary/20"
+                                                                : "text-gray-400 dark:bg-primary/10 border-gray-200 dark:border-primary/20 group-hover:border-primary group-hover:text-primary",
                                                             "flex h-6 w-6 flex-shrink-0 text-xs items-center justify-center rounded-lg border text-[0.625rem] font-bold bg-white"
                                                         )}
                                                     >

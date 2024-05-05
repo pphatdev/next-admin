@@ -5,12 +5,12 @@ import { Button } from "@/components/elements/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, } from "@/components/elements/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger, } from "@/components/elements/tabs"
 import { CalendarDateRangePicker } from "@/components/elements/date-range-picker"
-import { MainNav } from "./components/main-nav"
-import { Overview } from "./components/overview"
-import { RecentSales } from "./components/recent-sales"
-import { Search } from "./components/search"
-import TeamSwitcher from "./components/team-switcher"
-import { UserNav } from "./components/user-nav"
+import { MainNav } from "./utils/main-nav"
+import { Overview } from "./utils/overview"
+import { RecentSales } from "./utils/recent-sales"
+import { Search } from "./utils/search"
+import TeamSwitcher from "./utils/team-switcher"
+import { UserNav } from "./utils/user-nav"
 
 export const metadata: Metadata = {
     title: "Dashboard",
