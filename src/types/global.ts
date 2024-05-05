@@ -55,3 +55,20 @@ export type PaginationData = {
     items?: PageItems
     next?: PageNext
 }
+
+export type AdminContainer = {
+    children?: React.ReactNode
+    className?: string
+    style?: React.CSSProperties
+}
+
+export type ButtonType = AdminContainer & {
+    props?: any
+    href?: string
+}
+
+export type Breadcrumb = Array<{
+    name: string;
+    href?: string | undefined | null;
+    current?: boolean
+}>
