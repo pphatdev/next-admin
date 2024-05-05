@@ -1,24 +1,20 @@
 "use client"
-import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-} from "@/components/elements/card"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, } from "@/components/elements/card"
 import { Input } from "@/components/elements/input"
 import { Label } from "@/components/elements/label"
 import { Container } from '@/components/layouts/container';
 import { StarBoard } from '@/templates/stars';
+import { useState } from "react";
 import Link from "next/link"
 import LoginButton from "@/components/elements/login-button";
-import { useState } from "react";
 import '../../styles/login.css'
 
 
-export default function Login() {
-    const [email, setEmail] = useState('demo@admin.dev')
-    const [password, setPassword] = useState('123')
+export default function Login()
+{
+    const [ email, setEmail ] = useState('demo@admin.dev')
+    const [ password, setPassword ] = useState('123')
+
     return(
         <StarBoard>
             <div className="absolute bg-black z-1 inset-0 overflow-hidden opacity-20">
@@ -56,7 +52,7 @@ export default function Login() {
                     </CardContent>
                     <CardFooter className="flex gap-2 justify-end mt-3">
                         <Link href="/" className="transition-all bg-transparent hover:bg-white/5 text-white ring-1 ring-inset ring-primary/10 py-2 px-5 inline-flex items-center justify-center focus:outline-none whitespace-nowrap rounded-md text-sm font-medium">Back</Link>
-                        <LoginButton goto={'/admin'}/>
+                        <LoginButton goto={'/dashboard'}/>
                     </CardFooter>
                 </Card>
                 </div>
