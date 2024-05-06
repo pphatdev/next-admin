@@ -61,7 +61,7 @@ export const metadata: Metadata = {
         shortcut: icon.src,
         apple: icon.src,
     },
-    manifest: `${siteConfig.url}/site.webmanifest`,
+    // manifest: `${siteConfig.url}/site.webmanifest`,
 }
 
 export default function RootLayout({
