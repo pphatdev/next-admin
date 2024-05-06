@@ -5,6 +5,7 @@ import icon from '@/assets/favicon.ico'
 import { siteConfig } from "@/configs/site";
 
 const inter = Inter({ subsets: ["latin"] });
+import NextTopLoader from 'nextjs-toploader';
 
 // export const metadata: Metadata = {
 //     title: "Create Next App",
@@ -71,7 +72,13 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={inter.className}>{children}</body>
+            <body className={inter.className}>
+                <NextTopLoader
+                    easing="ease-in-out"
+                    shadow="0 0 10px #2299DD,0 0 5px #2299DD"
+                    speed={100}/>
+                {children}
+            </body>
         </html>
     );
 }
