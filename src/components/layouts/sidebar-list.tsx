@@ -9,8 +9,9 @@ const AdminSidebarList: React.FC<{
 ) => {
 
     const pathname = usePathname()
+
     return (
-        <nav className="flex flex-1 pt-3 flex-col px-6">
+        <nav className="flex flex-1 pt-3 flex-col px-6 relative">
             <ul role="list" className="flex flex-1 flex-col gap-y-3">
                 {modules.map((menu, index) => (
                     <li key={index}>

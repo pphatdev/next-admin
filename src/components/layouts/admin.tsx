@@ -47,7 +47,7 @@ const AdminLayout: React.FC<{
                 'flex w-full bg-gray-50 h-svh overflow-y-auto'
             )
         }>
-            <div className={cn(collapse ? '-left-full lg:left-0 lg:sticky lg:block': 'left-0 z-50 bg-white/80 backdrop-blur-sm', 'fixed transition-all w-72 h-screen shrink-0 text-slate-900 font-poppins border-r border-black/10')}>
+            <div className={cn(collapse ? '-left-full lg:left-0 lg:sticky lg:block': 'left-0 z-50 bg-white/80 backdrop-blur-sm', 'fixed transition-all w-72 h-screen overflow-y-auto pb-2 shrink-0 text-slate-900 font-poppins border-r border-black/10')}>
                 <AdminSidebarLogo collapseHandle={collapseHandle}/>
                 <AdminSidebarList modules={modules}/>
             </div>

@@ -29,12 +29,8 @@ const AdminHeader: React.FC<{className?: string, collapseHandle?: (e: React.Mous
                         <BellIcon className="h-5 w-5 text-slate-500"/>
                     </a>
                 </li>
-                <li>
-                    {/* <ModeToggle/> */}
-                </li>
-
                 <li className='relative'>
-                    <div className='rounded-full overflow-hidden ring-2 ring-white dark:ring-primary-400 drop-shadow'>
+                    <div className='rounded-full overflow-hidden ring-2 ring-white dark:ring-primary drop-shadow'>
                         <span className="sr-only">Leat Sophat</span>
                         <Image
                             width={32}
@@ -51,8 +47,8 @@ const AdminHeader: React.FC<{className?: string, collapseHandle?: (e: React.Mous
                         </Image>
                     </div>
                     <span className="absolute -bottom-0.5 right-0 flex h-2 w-2 ring-2 ring-white rounded-full">
-                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-400 opacity-75"></span>
-                        <span className="relative inline-flex rounded-full h-2 w-2 bg-primary-600 "></span>
+                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                        <span className="relative inline-flex rounded-full h-2 w-2 bg-primary "></span>
                     </span>
                 </li>
             </ul>

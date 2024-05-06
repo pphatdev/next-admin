@@ -5,7 +5,7 @@ import logo from '../../assets/logo.svg'
 
 const AdminSidebarLogo: React.FC<{ collapseHandle?: ( e: React.MouseEvent )=> void }> = ({collapseHandle}) => {
     return (
-        <header className='flex h-16 md:h-20 px-5 justify-between gap-2 border-b border-black/10 items-center'>
+        <header className='flex h-16 sticky md:h-20 px-5 justify-between gap-2 border-b border-black/10 items-center'>
             <div className='flex items-center gap-1'>
                 <span className='sr-only'>Logo</span>
                 <Image
