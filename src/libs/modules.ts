@@ -7,9 +7,9 @@ export const modules = [
         href: '/',
         children: [
             { id: 1, name: 'Overview', href: '/dashboard/overview', initial: "P", icon: ChartPieIcon, new: 0, current: true },
-            { id: 2, name: 'Recruitment', href: '/dashboard/recruitment', initial: "P", icon: UsersIcon, new: 10, current: true },
-            { id: 3, name: 'Employees', href: '/dashboard/', initial: "P", icon: UserGroupIcon, new: 1, current: true },
-            { id: 4, name: 'Appraisal', href: '/dashboard/', initial: "P", icon: RadioIcon, new: 0, current: true },
+            // { id: 2, name: 'Recruitment', href: '/dashboard/recruitment', initial: "P", icon: UsersIcon, new: 10, current: true },
+            // { id: 3, name: 'Employees', href: '/dashboard/', initial: "P", icon: UserGroupIcon, new: 1, current: true },
+            // { id: 4, name: 'Appraisal', href: '/dashboard/', initial: "P", icon: RadioIcon, new: 0, current: true },
         ]
     },
     {
