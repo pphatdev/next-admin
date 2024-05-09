@@ -1,3 +1,7 @@
+## NEXT Admin
+### Activities
+<img src="https://repobeats.axiom.co/api/embed/345610277681d23427a9dda340dd428744ebb012.svg" width="100%"/>
+
 ## Getting Started
 
 First, run the development server:
